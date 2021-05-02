@@ -1,5 +1,6 @@
 PROJEKT - Programowanie obiektowe c++
 Fabryka samochodów
+
 Napisz program oferujący następujące funkcjonalności:
 
 ETAP1
