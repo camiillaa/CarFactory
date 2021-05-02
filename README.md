@@ -1,4 +1,4 @@
-PROJEKT - Programowanie obiektowe c++
+<b>PROJEKT</b> - Programowanie obiektowe c++
 Fabryka samochodów
 
 Napisz program oferujący następujące funkcjonalności:
@@ -40,4 +40,5 @@ pliku powinna się zaczynać “stdin” i kończyć na “.txt”.
 
 
 ETAP3
+
 Dodana obsługa wyjątków. Wykorzystanie szablonów.
