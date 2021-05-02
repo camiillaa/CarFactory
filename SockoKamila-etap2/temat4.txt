@@ -1,0 +1,17 @@
+Opis problemu
+W drugim etapie projektu musiałam zrobić fabryki nie tylko dla samochodów ale także dla motocykli i rowerów.
+Aby to zrobić posłużyłam się szablonem klasy Factory. Ten szablon posłużył mi na produkcje zarówno pojazdów silnikowych, jak i rowerów.
+Założyłam, że domyślna ilość paliwa dla pojazdów z fabryki to 50 litrów. Zaproponowałam sposób dziedziczenia, że klasą bazową jest klasa Pojazd,
+która jest klasą abstrakcyjną bo posiada metody wirtualne.
+Klasą pochodną do niej jest klasa Rower i klasa PojazdySilnikowe, z której też dziedziczą klasy Motocykl i Samochód. W klasie pojazd stworzyłam destruktor wirtualny
+oraz zrobiłam 3 metody czysto wirtualne do pokazywania ładowności, do wypisywania informacji i do
+dowiedzenia się z jakim pojazdem mamy do czynienia. Utworzyłam klasę Osoba, może ona kupować pojazdy z fabryki, jak i sprzedawać do komisu.
+Zrobiłam opcje która pozwala również na kupno pojazdu silnikowego z komisu. Założyłam, że osoba, która kupiła pojazd silnikowy z fabryki i sprzedała później do komisu przejechala 1000km.
+Chciałabym też podkreślić, że przy zmianie przebiegu, w przypadku tylko niektórych marek przebieg został zmieniony(dzielony na pół) przy zakupie przez komis- u mnie OPEL i AUDI.
+Jeśli osoba, która sprzedaje pojazd nie uzyska odpowiedniej oferty(komis nie będzie mógł zapłacić odpowiedniej sumy) to osoba sprzeda ten pojazd innej prywatnej osobie i pozbędzie się owego pojazdu.
+Nie wprowadzałam tutaj opcji "zmień właściciela" ponieważ klasa Osoba, była klasą dodatkową, nie wymaganą w temacie projektu i posłużyła mi tylko w celu pokazania relacji fabryka-osoba-komis.
+Fabryka oczywiście przy sprzedaży zmienia właściciela pojazdu, tak samo jak przy kupnie przez pojazd przez Osobe, czy Komis. 
+Metoda ładowność została metodą wirtualną, dzięki czemu w zależności od jakiego pojazdu chcemy zobaczyć naszą ładowność wywoła się odpowiednia wersja. 
+Cena skupu jak i sprzedaży została uzwględniona przy kupnie/sprzedaży przez komis. 
+Osoba może kupować również rowery, więc aby przy zakupie przez komis nie było problemu, że komis może przez przypadek kupić też rower, zrobiłam metodę wirtualną, która stwierdza czy pojazd jest pojazdem silnikowym.
+Mamy również klase Lakiernik, która pozwala na zmianę koloru wybranego przez nas pojazdu.

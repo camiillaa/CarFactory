@@ -1,0 +1,13 @@
+Opis problemu
+W trzecim etapie projektu uzyłam szablon klasy Factory, ktory posluzyl mi do stworzenia fabryki samochodow, motocykli oraz rowerow. Dla kazdej fabryki wykonalam odpowiednie funkcje,
+aby pokazac dzialanie programu.
+Z klasy bazowej Vehicle wydzielilam klase pochodna MotorVehicle, w ktorej zostaly umieszczone pojazdy silnikowe. Zalozylam, ze domyslna ilosc paliwa dla pojazdow z fabryki to 50 l.
+Klasa bazowa pojazd jest klasa abstrakcyjna, bo posiada metody wirtualne. Fabryka moze byc fabryka samochodow marki OPEL,AUDI oraz FORD - dla samochodow lub YAMAHA, SUZUKI - dla motocykli.
+Mam rowniez klase reprezentujaca komis na pojazdy silnikowe - usedVehicles, a takze klase Person, ktora reprezentuje osobe "posrednika" pomiedzy fabryka a komisem.
+Zalozylam, ze osoba ktora kupila auto z fabryki przejechala 100km. Ta sytuacja, rowniez jest wzieta pod uwage przy zmianie przebiegu oraz ilosci paliwa.
+Gdy osoba, chce sprzedac pojazd, ale niestety komis nie bedzie mial wystarczajacych srodkow to pojazd zostaje sprzedany jakiejs nieznanej prywatnej osobie.
+Zalozylam, ze przy obliczaniu ceny pojazdu w komisie uzyje funkcji zaleznej od marki i przebiegu, ktora wyglada nastepujaca: cenafabryczna-2*przebieg. Jesli chodzi o samochody,
+ktore na wejsciu byly juz w fabryce marek takich jak HYUNDAI i SKODA to ich cena wynosi 20 000zl. W projekcie znajduje sie tez klasa Sprayer, pozwalajaca na zmiane koloru pojazdu w fabryce.
+Osoba moze rowniez kupowac rowery. Do projektu zostala dodana osluga wyjatkow takich jak podanie nieprawidlowej opcji, czy np. proba zakupu przez komis pojazdu typu rower - tak nie mozna,
+poniewaz komis moze zakupic tylko pojazdy silnikowe.
+Dla urozmaicenia projektu dodalam znacznie wiecej opisow i bardziej przejrzysty interfejs, ktore pozwalaja na lepsze zrozumienie wykonywanych dzialan.

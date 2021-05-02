@@ -1,0 +1,18 @@
+Opis problemu
+Pierwszym etapem było stworzenie dwóch klas, jedna do stworzenia obiektu
+Factory, czyli do stworzenia naszej fabryki, a druga Car, która tworzy obiekty Car, czyli tworzy nasze samochody. 
+Aby w fabryce można było trzymać samochody w konstruktorze Factory(fabryki), stworzyłam dynamiczną tablice wskaźników wskazujących na obiekty typu Car
+o nazwie _cars o zadanej wielkości FACTORY_size. 
+Aby można było utworzyć dany samochód użyłam konstruktora, który przyjmuje stały kolor i markę, właściciel nie jest stały, ponieważ później
+po sprzedaniu samochodu można go będzie zmieniać. 
+Był też problem co jeśli nasz samochód zostanie sprzedany i usunięty z fabryki, jak sprawdzić kto jest jego nowym właścielem?
+Rozwiązaniem dla tego problemu jest druga tablica statyczna wskaźników na obiekty Car, którą stworzyłam już w klasie Car. Przy każdym wywołaniu kontruktora dodaje do mojej tablicy wskaźników, 
+kolejny wskaźnik na samochód, który właśnie został stworzony. Posłużyła mi ona za tablice, w której przechowuje wskaźniki na wszystkie samochody, które kiedykolwiek były wyprodukowane w naszej fabryce tzw. rejestr samochodów.
+Moja fabryka to fabryka samochodów marki FORD.
+Wykonłam interfejs, w którym mogę wybrać poszczególne opcje takie jak wyprodukowanie nowego samochodu, sprzedanie
+wybranego, przejechanie się(zwiększenie przebiegu) oraz opcje do pokazania naszej fabryki, rejestru lub opcja do zakończenia programu.
+W funkcji main stworzyłam pomocnicze funkcje, które posłużyły głównie do wprowadzania danych jakie chcemy w dalszej częsci programu uzyskać.
+Warto zwrócić uwagę na funkcję do zmieniania przebiegu samochodu. Aby wybrać samochód który chce potrzebowałam miejsca, w którym ten samochód się znajduję.
+Utworzyłam sobie funkcję getCar, która zwraca wskaźnik na wybrany samochód i dzięki niej mogłam wykonać metodę klasy Car do zmieniania przebiegu. 
+Destruktor w Factory dealokuje mi pamięć na każdy wskaźnik wszystkich samochodów w pętli, a następnie dealokuje pamięć na tablicę wskaźników _cars, 
+zaś destruktor Car każdy wskaźnik na samochód wyzeruje.
