@@ -1,9 +1,9 @@
-<b>PROJEKT</b> - Programowanie obiektowe c++
+<h3>PROJEKT</h3> - Programowanie obiektowe c++
 Fabryka samochodów
 
 Napisz program oferujący następujące funkcjonalności:
 
-ETAP1
+<h5><i>ETAP1</i></h5>
 1. Klasa reprezentująca Fabrykę posiada unikalną nazwę określającą markę i produkuje
 obiekty klasy Samochód i dodaje je do prywatnej tablicy.
 2. Metoda tworząca nowy samochód przyjmuje kolor oraz liczbę drzwi jako argumenty.
@@ -16,7 +16,8 @@ auto z fabryki.
 5. Program powinien udostępniać interfejs pozwalający na wywołania poszczególnych
 metod.
 
-ETAP2
+
+<h5><i>ETAP2</i></h5>
 
 Dodajemy klasy Motocykl i Rower (z opcjonalnym koszykiem). Klasa Samochód i Motocykl mają
 dodatkowo pole ‘ilość_paliwa’, które jest zmniejszane przez metodę jedź. Wprowadzamy klasy
@@ -39,6 +40,7 @@ wejścia. W przesłanym archiwum proszę umieścić jeden lub więcej plików z 
 pliku powinna się zaczynać “stdin” i kończyć na “.txt”.
 
 
-ETAP3
+
+<h5><i>ETAP3</i></h5>
 
 Dodana obsługa wyjątków. Wykorzystanie szablonów.
