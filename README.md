@@ -1,4 +1,5 @@
-<h3>PROJEKT</h3> - Programowanie obiektowe c++
+<h3>PROJEKT</h3> 
+Programowanie obiektowe c++
 Fabryka samochodów
 
 Napisz program oferujący następujące funkcjonalności:
